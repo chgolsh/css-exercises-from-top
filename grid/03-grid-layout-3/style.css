@@ -132,6 +132,11 @@
 .nav {
   grid-area: nav;
 }
+.nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .article {
   grid-area: article;
