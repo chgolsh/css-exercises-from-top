@@ -95,7 +95,10 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-areas: "hd hd";
+  grid-template-areas: "hd hd"
+                       "sb nav"      
+                       "sb article"
+                       "ft ft";
   gap: 4px;
 }
 
@@ -104,11 +107,26 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-
 .header ul {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   height: 100%;
+}
+
+.sidebar {
+  grid-area: sb;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: ft;
 }
