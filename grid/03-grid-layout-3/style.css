@@ -117,6 +117,16 @@
 
 .sidebar {
   grid-area: sb;
+  display: grid;
+  gap: 50px;
+}
+.sidebar .photo {
+  display: grid;
+  align-items: center;
+}
+.sidebar .side-content {
+  display: grid;
+  align-items: center;
 }
 
 .nav {
